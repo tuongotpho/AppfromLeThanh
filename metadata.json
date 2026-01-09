@@ -1,0 +1,8 @@
+{
+  "name": "VibeAppfromLeThanh",
+  "description": "A stylish landing page to showcase projects created through vibe coding with an admin panel for project management.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
