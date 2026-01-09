@@ -108,6 +108,17 @@ const App: React.FC = () => {
       <header className="relative pt-24 pb-16 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-indigo-100/30 blur-[120px] rounded-full -z-10" />
         <div className="container mx-auto px-6 text-center space-y-6">
+          
+          <div className="flex justify-center animate-in fade-in zoom-in duration-700">
+             <div className="relative w-28 h-28 rounded-full overflow-hidden border-4 border-white shadow-2xl ring-4 ring-indigo-50">
+                <img 
+                  src="https://github.com/thanhlv87/pic/blob/main/programmer.png?raw=true" 
+                  alt="Vibe Coder" 
+                  className="w-full h-full object-cover"
+                />
+             </div>
+          </div>
+
           <div className="flex justify-center items-center gap-2 mb-4">
             <div className="inline-block px-4 py-1.5 bg-indigo-50 text-indigo-700 rounded-full text-sm font-bold">
                {isAdmin ? '🛡️ Admin Mode' : 'Vibe Coding Portfolio'}
@@ -192,13 +203,13 @@ const App: React.FC = () => {
             )}
           </div>
         ) : (
-          <CVSection />
+          <CVSection isAdmin={isAdmin} />
         )}
       </main>
 
       <footer className="mt-24 py-12 border-t border-slate-100 text-center">
         <p className="text-slate-400 text-sm cursor-help select-none" onDoubleClick={toggleLogin}>
-          © {new Date().getFullYear()} • Built with Vibe Coding Energy
+          © {new Date().getFullYear()} • App from Gemini&Thanhlv87
         </p>
         {isLoginVisible && !isAdmin && (
           <form onSubmit={handleLogin} className="mt-4 flex flex-col gap-2 justify-center max-w-xs mx-auto p-4 bg-white rounded-xl shadow-lg border border-slate-100">

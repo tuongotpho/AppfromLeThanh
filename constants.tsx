@@ -41,7 +41,7 @@ export const PROJECTS: Project[] = [
 ];
 
 export const CV_DATA: CVData = {
-  fullName: "Nguyễn Vibe Coder",
+  fullName: "ThanhLV Vibe Coder",
   title: "Creative Developer & Vibe Enthusiast",
   bio: "Tôi đam mê việc biến các ý tưởng sáng tạo thành hiện thực thông qua phương pháp Vibe Coding - tập trung vào cảm xúc, trải nghiệm người dùng và tốc độ phát triển đột phá.",
   email: "hello@vibecoding.me",
